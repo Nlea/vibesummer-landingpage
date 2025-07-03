@@ -1,0 +1,261 @@
+---
+import trophyIcon from '../assets/trophy-icon.svg';
+import placeholderLogo from '../assets/placeholder-logo.svg';
+---
+<section id="challenges" class="challenges" style="position: relative; z-index: 1;">
+    <div class="section-title">
+        <span class="grey">WEEKLY</span> <span class="neon">CHALLENGES</span>
+    </div>
+    <h3>FOUR WEEKS OF CREATIVE EXPLORATION WITH AMAZING PARTNERS!</h3>
+    <div class="challenge-grid">
+        <div class="challenge-card">
+            <div class="week-badge">July 30th - August 6th</div>
+            <div class="card-content">
+                <h3>Challenge 1</h3>
+                <div class="partner-section">
+                    <p class="partner-text">In collaboration with:</p>
+                    <img src={placeholderLogo.src} alt="Partner 1 Logo" class="partner-logo" />
+                </div>
+                <p>New challenge revealed soon!</p>
+                <div class="prize-badge">
+                    <img src={trophyIcon.src} alt="Trophy" class="trophy-icon" />
+                    <span>€100</span>
+                    <span>Amazon voucher</span>
+                </div>
+                <div class="challenge-actions">
+                    <a href="#" class="view-btn">View Challenge</a>
+                    <a href="#" class="submit-btn">Submit Challenge</a>
+                </div>
+            </div>
+        </div>
+        <div class="challenge-card">
+            <div class="week-badge">August 6th -  13th</div>
+            <div class="card-content">
+                <h3>Challenge 2</h3>
+                <div class="partner-section">
+                    <p class="partner-text">Presented by:</p>
+                    <img src={placeholderLogo.src} alt="Partner 2 Logo" class="partner-logo" />
+                </div>
+                <p>New challenge revealed soon!</p>
+                <div class="prize-badge">
+                    <img src={trophyIcon.src} alt="Trophy" class="trophy-icon" />
+                    <span>€100</span>
+                    <span>Amazon voucher</span>
+                </div>
+                <div class="challenge-actions">
+                    <a href="#" class="view-btn">View Challenge</a>
+                    <a href="#" class="submit-btn">Submit Challenge</a>
+                </div>
+            </div>
+        </div>
+        <div class="challenge-card">
+            <div class="week-badge">August 13th - 20th</div>
+            <div class="card-content">
+                <h3>Challenge 3</h3>
+                <div class="partner-section">
+                    <p class="partner-text">In partnership with:</p>
+                    <img src={placeholderLogo.src} alt="Partner 3 Logo" class="partner-logo" />
+                </div>
+                <p>New challenge revealed soon!</p>
+                <div class="prize-badge">
+                    <img src={trophyIcon.src} alt="Trophy" class="trophy-icon" />
+                    <span>€100</span>
+                    <span>Amazon voucher</span>
+                </div>
+                <div class="challenge-actions">
+                    <a href="#" class="view-btn">View Challenge</a>
+                    <a href="#" class="submit-btn">Submit Challenge</a>
+                </div>
+            </div>
+        </div>
+        <div class="challenge-card">
+            <div class="week-badge">August 20th - 27th</div>
+            <div class="card-content">
+                <h3>Challenge 4</h3>
+                <div class="partner-section">
+                    <p class="partner-text">Brought to you by:</p>
+                    <img src={placeholderLogo.src} alt="Partner 4 Logo" class="partner-logo" />
+                </div>
+                <p>New challenge revealed soon!</p>
+                <div class="prize-badge">
+                    <img src={trophyIcon.src} alt="Trophy" class="trophy-icon" />
+                    <span>€100</span>
+                    <span>Amazon voucher</span>
+                </div>
+                <div class="challenge-actions">
+                    <a href="#" class="view-btn">View Challenge</a>
+                    <a href="#" class="submit-btn">Submit Challenge</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .challenges {
+        padding: 4rem 2rem;
+        background: transparent;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-title .neon {
+        color: #39ff14;
+    }
+
+    .section-title .grey {
+        color: rgb(120, 122, 120);
+    }
+
+    .challenge-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .challenge-card {
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        position: relative;
+    }
+
+    .challenge-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .week-badge {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: rgb(92, 248, 7);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+
+    .card-content {
+        padding: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        color: rgb(120, 122, 120);
+        text-align: center;
+        font-weight: normal;
+    }
+
+    .prize-badge {
+        margin-top: 1.5rem;
+        background: linear-gradient(to right, rgba(75, 255, 20, 0.1), rgba(250, 250, 250, 0.2));
+        color: rgb(120, 122, 120);
+        padding: 1rem;
+        border-radius: 10px;
+        text-align: center;
+        border: 2px solid #39ff14;
+    }
+
+    .prize-badge span {
+        display: block;
+    }
+
+    .prize-badge span:first-child {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .prize-badge span:last-child {
+        font-size: 0.9rem;
+        opacity: 0.9;
+    }
+
+    .trophy-icon {
+        width: 24px;
+        height: 24px;
+        margin-bottom: 0.5rem;
+        color: #39ff14;
+    }
+
+    .challenge-actions {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .view-btn, .submit-btn {
+        flex: 1;
+        padding: 0.75rem 1rem;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        text-align: center;
+        transition: all 0.2s ease;
+    }
+
+    .view-btn, .submit-btn {
+        background: rgba(92, 248, 7, 0.1);
+        color: rgb(92, 248, 7);
+    }
+
+    .view-btn:hover, .submit-btn:hover {
+        transform: translateY(-2px);
+        background: rgb(92, 248, 7);
+        color: white;
+    }
+
+    .partner-section {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .partner-text {
+        font-size: 0.9rem;
+        color: rgb(120, 122, 120);
+        margin-bottom: 0.5rem;
+    }
+
+    .partner-logo {
+        max-width: 120px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+
+    @media (max-width: 768px) {
+        .challenges {
+            padding: 3rem 1rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        .challenge-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .rewards-grid {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            max-width: 400px;
+        }
+
+        .challenge-card {
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+</style>

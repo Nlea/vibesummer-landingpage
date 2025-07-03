@@ -1,0 +1,169 @@
+---
+---
+<section class="rewards-section" style="position: relative; z-index: 1;">
+    <div class="section-title">
+        <span class="grey">REWARDS</span> <span class="neon">SYSTEM</span>
+    </div>
+    <p class="rewards-intro">THE MORE YOU PARTICIPATE, THE MORE AMAZING REWARDS YOU UNLOCK!
+
+</p>
+    
+    <div class="rewards-grid">
+        <div class="reward-card">
+            <div class="reward-number">1</div>
+            <h3>Challenge solved</h3>
+            <div class="reward-item">
+                Limited Edition Sticker Sheet
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="reward-number">2</div>
+            <h3>Challenges solved</h3>
+            <div class="reward-item">
+                Limited Edition Sticker Sheet
+            </div>
+            <div class="reward-item">
+                Exclusive Pair of Socks
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="reward-number">3</div>
+            <h3>Challenges solved</h3>
+            <div class="reward-item">
+                Limited Edition Sticker Sheet
+            </div>
+            <div class="reward-item">
+                Exclusive Pair of Socks
+            </div>
+            <div class="reward-item">
+                Ultimate Summer Vibe Shirt
+            </div>
+        </div>
+
+        <div class="reward-card special">
+            <div class="reward-number">4</div>
+            <h3>Challenges solved</h3>
+            <div class="reward-item">
+                Limited Edition Sticker Sheet
+            </div>
+            <div class="reward-item">
+                Exclusive Pair of Socks
+            </div>
+            <div class="reward-item">
+                Ultimate Summer Vibe Shirt
+            </div>
+            <div class="reward-item special">
+                Enter the raffle for a €300 Amazon voucher!
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .rewards-section {
+        padding: 4rem 2rem;
+        background: rgba(57, 255, 20, 0.05);
+        margin-top: 2rem;
+    }
+
+    .rewards-section .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-title .neon {
+        color: #39ff14;
+    }
+
+    .section-title .grey {
+        color: rgb(120, 122, 120);
+    }
+
+    .rewards-intro {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto 3rem auto;
+        color: rgb(120, 122, 120);
+    }
+
+    .rewards-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .reward-card {
+        background: rgba(255, 255, 255, 0.29);
+        padding: 2rem;
+        border-radius: 15px;
+        border: 2px solid #39ff14;
+        text-align: center;
+        position: relative;
+        transition: transform 0.3s ease;
+    }
+
+    .reward-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .reward-number {
+        background: #39ff14;
+        color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0 auto 1rem auto;
+    }
+
+    .reward-card h3 {
+        margin-bottom: 1rem;
+        color: rgb(120, 122, 120);
+    }
+
+    .reward-card p {
+        color: rgb(120, 122, 120);
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .reward-item {
+        background: rgba(255, 208, 20, 0.14);
+        padding: 0.75rem;
+        margin-bottom: 0.75rem;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 208, 20, 0.3);
+    }
+
+    .reward-card.special {
+        border: 3px solidrgb(255, 212, 20);
+        background: rgba(255, 255, 255, 0.53);
+    }
+
+    .reward-item.special {
+        background: rgba(255, 212, 20);
+        color: white;
+        border: none;
+    }
+
+    @media (max-width: 768px) {
+        .rewards-grid {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            max-width: 400px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+        }
+    }
+</style>

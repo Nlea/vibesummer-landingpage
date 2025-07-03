@@ -1,0 +1,121 @@
+---
+---
+<section class="features" style="position: relative; z-index: 1;">
+  <div class="feature-grid">
+    <div class="feature-card">
+      <div class="icon">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#39ff14" stroke-width="1.5">
+          <rect x="3" y="4" width="18" height="18" rx="2" />
+          <line x1="3" y1="10" x2="21" y2="10" />
+          <line x1="8" y1="2" x2="8" y2="6" />
+          <line x1="16" y1="2" x2="16" y2="6" />
+        </svg>
+      </div>
+      <span class="highlight">4</span>
+      <p>Weeks & Challenges</p>
+    </div>
+    
+    <div class="feature-card">
+      <div class="icon">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#39ff14" stroke-width="1.5">
+          <circle cx="9" cy="10" r="4" />
+          <circle cx="15" cy="14" r="4" />
+        </svg>
+      </div>
+      <span class="highlight">24/7</span>
+      <p>Community Support</p>
+    </div>
+    
+    <div class="feature-card">
+      <div class="icon">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#39ff14" stroke-width="1.5">
+          <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+        </svg>
+      </div>
+      <span class="highlight">Weekly</span>
+      <p>Live Streams</p>
+    </div>
+    
+    <div class="feature-card">
+      <div class="icon">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#39ff14" stroke-width="1.5">
+          <circle cx="12" cy="12" r="5" />
+          <path d="M12 2v2" />
+          <path d="M12 20v2" />
+          <path d="M2 12h2" />
+          <path d="M20 12h2" />
+          <path d="M4.93 4.93l1.41 1.41" />
+          <path d="M17.66 17.66l1.41 1.41" />
+          <path d="M4.93 19.07l1.41-1.41" />
+          <path d="M17.66 6.34l1.41-1.41" />
+        </svg>
+      </div>
+      <span class="highlight">∞</span>
+      <p>Summer Vibes</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .features {
+    padding: 0 2rem 4rem 2rem;
+    margin-top: -10vh;
+    background-color: transparent;
+  }
+
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .feature-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 2rem; 
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #39ff14; /* Neon green */
+  }
+
+  .highlight {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #39ff14; /* Neon green */
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color:rgb(120, 122, 120);
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 768px) {
+    .feature-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .feature-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  }
+</style>
