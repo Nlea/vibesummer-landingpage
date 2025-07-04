@@ -1,26 +1,21 @@
 ---
 import SummerBackground from './SummerBackground.astro';
-import cloudflareLogo from '../assets/cloudflare-logo-placeholder.svg';
-import fiberplaneLogo from '../assets/fiberplane-logo-placeholder.svg';
+import vibeSummerLogo from '../assets/vibeSummer.svg';
+import VibeGoose from '../assets/vibeGoose.svg';
 ---
 <section class="hero">
     <SummerBackground />
     <div class="hero-content">
-        <div class="presenters">
-            <div class="logos">
-                <img src={cloudflareLogo.src} alt="Cloudflare" height="30" />
-                <img src={fiberplaneLogo.src} alt="Fiberplane" height="30" />
-            </div>
-            <p class="present-text">present:</p>
-        </div>
         <div class="title-container">
-            <div class="vibe-text">Vibe</div>
-            <div class="summer-text">Summer</div>
+            <img src={vibeSummerLogo.src} alt="Vibe Summer" class="vibe-summer-logo" />
         </div>
-        <p class="subtitle">27th July - 3rd August 2025</p>
+        <h2>Four weeks of vibe coding challenges</h2>
+        <p>27th July - 3rd August 2025</p>
         <div class="hero-cta">
-            <a href="#challenges" class="primary-button">Join Discord</a>
-            <a href="#challenges" class="secondary-button">View Schedule</a>
+            <div class="button-wrapper">
+                <a href="#challenges" class="primary-button">Join Discord</a>
+                <a href="#challenges" class="secondary-button">View Schedule</a>
+            </div>
         </div>
     </div>
 </section>
@@ -45,67 +40,17 @@ import fiberplaneLogo from '../assets/fiberplane-logo-placeholder.svg';
         width: 90%;
     }
 
-    .presenters {
-        margin-bottom: 1.5rem;
-    }
-
-    .logos {
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .logos img {
-        height: 30px;
-        width: auto;
-        opacity: 0.85;
-        transition: all 0.3s ease;
-        filter: grayscale(20%);
-    }
-
-    .logos img:hover {
-        opacity: 1;
-        filter: grayscale(0%);
-        transform: scale(1.05);
-    }
-
-    .present-text {
-        font-size: 1.2rem;
-        color: #4B5563;
-        margin: 0;
-    }
-
-    h1 {
-        font-size: 4rem;
-        font-weight: 800;
-        margin-bottom: 1rem;
-        line-height: 1.2;
-    }
+  
 
     .title-container {
         margin-bottom: 1rem;
     }
 
-    .vibe-text {
-        font-size: clamp(2.5rem, 5vw, 4rem);
-        font-weight: 800;
-        background: linear-gradient(to right, #2ECC71, #27AE60);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-shadow: 0 0 15px rgba(46, 204, 113, 0.3);
-        line-height: 1.1;
-        letter-spacing: -0.02em;
-        margin-bottom: 0.5rem;
-    }
-
-    .summer-text {
-        font-size: clamp(3rem, 6vw, 4.5rem);
-        font-weight: 800;
-        color: #2C3E50;
-        line-height: 1.1;
-        letter-spacing: -0.03em;
+    .vibe-summer-logo {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin: 0 auto;
     }
 
     .highlight {
@@ -113,14 +58,6 @@ import fiberplaneLogo from '../assets/fiberplane-logo-placeholder.svg';
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-    }
-
-    .subtitle {
-        font-size: clamp(1.1rem, 2vw, 1.25rem);
-        margin: 1.5rem 0 2rem;
-        color: #34495E;
-        font-weight: 500;
-        letter-spacing: 0.02em;
     }
 
     .hero-cta {
@@ -132,7 +69,7 @@ import fiberplaneLogo from '../assets/fiberplane-logo-placeholder.svg';
 
     .primary-button, .secondary-button {
         padding: 1rem 2rem;
-        border-radius: 50px;
+        border-radius: 0;
         text-decoration: none;
         font-weight: 600;
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -140,32 +77,36 @@ import fiberplaneLogo from '../assets/fiberplane-logo-placeholder.svg';
         outline: none;
     }
 
-    .primary-button:hover, .secondary-button:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(46, 204, 113, 0.2);
-    }
-
-    .primary-button:focus-visible, .secondary-button:focus-visible {
-        box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.4);
-    }
-
-    .primary-button:active, .secondary-button:active {
-        transform: translateY(0);
-        box-shadow: 0 2px 6px rgba(46, 204, 113, 0.15);
+    .button-wrapper {
+        display: flex;
+        gap: 1rem;
     }
 
     .primary-button {
-        background: linear-gradient(135deg, #2ECC71, #27AE60);
-        color: white;
+        background: white;
+        color: black;
         font-weight: 600;
+        border: 2px solid #FF20F8;
+    }
+
+    .primary-button:hover {
+        background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #FF20F8 100%);
+        color: black;
     }
 
     .secondary-button {
-        background: rgba(255, 255, 255, 0.9);
-        color: #27AE60;
-        border: 2px solid #2ECC71;
-        backdrop-filter: blur(10px);
+        background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #FF20F8 100%);
+        color: black;
+        font-weight: 600;
+        border: none;
     }
+
+       .secondary-button:hover {
+        background: white;
+        color: black;
+        border: 2px solid #FF20F8;
+    }
+
 
     .hero-graphics {
         position: absolute;
