@@ -9,8 +9,8 @@ import placeholderLogo from '../assets/placeholder-logo.svg';
     <div class="challenge-grid">
         <div class="challenge-card">
             <div class="card-content">
-                <h3>Challenge 1</h3>
-                <h4>July 30th - August 6th</h4>
+                <h4>Challenge 1</h4>
+                <p>July 30th - August 6th</p>
                 <div class="partner-section">
                     <p>Together with:</p>
                     <img src={placeholderLogo.src} alt="Partner 1 Logo" class="partner-logo" />
@@ -29,8 +29,8 @@ import placeholderLogo from '../assets/placeholder-logo.svg';
         </div>
         <div class="challenge-card">
             <div class="card-content">
-                <h3>Challenge 2</h3>
-                <h4>August 6th - August 13th</h4>
+                <h4>Challenge 2</h4>
+                <p>August 6th - August 13th</p>
                 <div class="partner-section">
                     <p>Together with:</p>
                     <img src={placeholderLogo.src} alt="Partner 2 Logo" class="partner-logo" />
@@ -50,8 +50,8 @@ import placeholderLogo from '../assets/placeholder-logo.svg';
         <div class="challenge-card">
            
             <div class="card-content">
-                <h3>Challenge 3</h3>
-                <h4>August 13th - August 20th</h4>
+                <h4>Challenge 3</h4>
+                <p>August 13th - August 20th</p>
 
                 <div class="partner-section">
                     <p>Together with:</p>
@@ -72,8 +72,8 @@ import placeholderLogo from '../assets/placeholder-logo.svg';
         <div class="challenge-card">
            
             <div class="card-content">
-                <h3>Challenge 4</h3>    
-                <h4>August 20th - August 27th</h4>
+                <h4>Challenge 4</h4>    
+                <p>August 20th - August 27th</p>
                 <div class="partner-section">
                     <p>Together with:</p>
                     <img src={placeholderLogo.src} alt="Partner 4 Logo" class="partner-logo" />
@@ -131,18 +131,30 @@ import placeholderLogo from '../assets/placeholder-logo.svg';
 
     .challenge-actions {
         display: flex;
-        gap: 1rem;
+        gap: 10px;
         margin-top: 1.5rem;
+        justify-content: center;
     }
 
     .view-btn, .submit-btn {
-        flex: 1;
-        padding: 0.75rem 1rem;
-        border-radius: 0.3px;
+        width: 140px;
+        height: 55px;
+        padding: 0 10px;
+        border-radius: 2px;
         text-decoration: none;
-        font-weight: 600;
+        font-family: 'Inter Tight', sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 55px;
+        letter-spacing: 0;
         text-align: center;
         transition: all 0.2s ease;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
     }
 
     .view-btn, .submit-btn {
