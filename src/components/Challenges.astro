@@ -1,7 +1,8 @@
 ---
 import trophyIcon from '../assets/trophy-icon.svg';
 import placeholderLogo from '../assets/placeholder-logo.svg';
-
+import vibeGoose from '../assets/vibeGoose.svg';
+import { Image } from 'astro:assets';
 ---
 <section id="challenges" class="challenges" style="position: relative; z-index: 1;">
    <h2> Weekly Challenges</h2>
@@ -27,7 +28,8 @@ import placeholderLogo from '../assets/placeholder-logo.svg';
                 </div>
             </div>
         </div>
-        <div class="challenge-card">
+        <div class="challenge-card" style="position: relative;">
+            <Image src={vibeGoose} alt="VibeGoose" class="challenge-goose" width={60} height={77} />
             <div class="card-content">
                 <h4>Challenge 2</h4>
                 <p>August 6th - August 13th</p>
@@ -112,7 +114,6 @@ import placeholderLogo from '../assets/placeholder-logo.svg';
     .challenge-card {
         background: rgba(255, 255, 255, 0.4);
         border-radius: 1px;
-        overflow: hidden;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease;
         position: relative;
@@ -201,6 +202,15 @@ import placeholderLogo from '../assets/placeholder-logo.svg';
 
 
 
+
+    .challenge-goose {
+        position: absolute;
+        width: 60px;
+        height: auto;
+        right: -1px;
+        top: -60px;
+        z-index: 2;
+    }
 
     @media (max-width: 768px) {
         .challenges {

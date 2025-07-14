@@ -1,8 +1,11 @@
 ---
+import { Image } from 'astro:assets';
+import vibeGoose from '../assets/vibeGoose.svg';
 ---
 <section class="features" style="position: relative; z-index: 1;">
   <div class="feature-grid">
-    <div class="feature-card">
+    <div class="feature-card" style="position: relative;">
+      <Image src={vibeGoose} alt="VibeGoose" class="vibe-goose" width={60} height={77} />
       <h3>4</h3>
       <p>Weeks & Challenges</p>
     </div>
@@ -82,5 +85,13 @@
       grid-template-columns: 1fr;
     }
   }
-  
+
+  .vibe-goose {
+    position: absolute;
+    width: 60px;
+    height: auto;
+    left: -1px;
+    top: -60px;
+    z-index: 0;
+  }
 </style>
