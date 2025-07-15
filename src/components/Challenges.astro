@@ -1,7 +1,8 @@
 ---
-import trophyIcon from '../assets/trophy-icon.svg';
-import placeholderLogo from '../assets/placeholder-logo.svg';
+import trophyIcon from '../assets/trophy-icon.svg?url';
+import placeholderLogo from '../assets/placeholder-logo.svg?url';
 import vibeGoose from '../assets/vibeGoose.svg?url';
+import elevenlabsLogo from '../assets/elevenlabs-logo-white.svg?url';   
 import { Image } from 'astro:assets';
 ---
 <section id="challenges" class="challenges" style="position: relative; z-index: 1;">
@@ -14,11 +15,11 @@ import { Image } from 'astro:assets';
                 <p>July 30th - August 6th</p>
                 <div class="partner-section">
                     <p>Together with:</p>
-                    <img src={placeholderLogo.src} alt="Partner 1 Logo" class="partner-logo" />
+                    <img src={placeholderLogo} alt="Partner 1 Logo" class="partner-logo" />
                 </div>
                 <p>New challenge revealed soon!</p>
                 <div class="prize-badge">
-                    <img src={trophyIcon.src} alt="Trophy" class="trophy-icon" />
+                    <img src={trophyIcon} alt="Trophy" class="trophy-icon" />
                     <span>€100</span>
                     <span>Amazon voucher</span>
                 </div>
@@ -35,11 +36,11 @@ import { Image } from 'astro:assets';
                 <p>August 6th - August 13th</p>
                 <div class="partner-section">
                     <p>Together with:</p>
-                    <img src={placeholderLogo.src} alt="Partner 2 Logo" class="partner-logo" />
+                    <img src={placeholderLogo} alt="Partner 2 Logo" class="partner-logo" />
                 </div>
                 <p>New challenge revealed soon!</p>
                 <div class="prize-badge">
-                    <img src={trophyIcon.src} alt="Trophy" class="trophy-icon" />
+                    <img src={trophyIcon} alt="Trophy" class="trophy-icon" />
                     <span>€100</span>
                     <span>Amazon voucher</span>
                 </div>
@@ -52,16 +53,18 @@ import { Image } from 'astro:assets';
         <div class="challenge-card">
            
             <div class="card-content">
-                <h4>Challenge 3</h4>
+            <h5>Elevenlabs Challenge: </h5>
+                <h4>Make your API Speak</h4>
+                
                 <p>August 13th - August 20th</p>
 
                 <div class="partner-section">
                     <p>Together with:</p>
-                    <img src={placeholderLogo.src} alt="Partner 3 Logo" class="partner-logo" />
+                    <img src={elevenlabsLogo} alt="Elevenlabs" class="partner-logo" />
                 </div>
                 <p>New challenge revealed soon!</p>
                 <div class="prize-badge">
-                    <img src={trophyIcon.src} alt="Trophy" class="trophy-icon" />
+                    <img src={trophyIcon} alt="Trophy" class="trophy-icon" />
                     <span>€100</span>
                     <span>Amazon voucher</span>
                 </div>
@@ -78,11 +81,11 @@ import { Image } from 'astro:assets';
                 <p>August 20th - August 27th</p>
                 <div class="partner-section">
                     <p>Together with:</p>
-                    <img src={placeholderLogo.src} alt="Partner 4 Logo" class="partner-logo" />
+                    <img src={placeholderLogo} alt="Partner 4 Logo" class="partner-logo" />
                 </div>
                 <p>New challenge revealed soon!</p>
                 <div class="prize-badge">
-                    <img src={trophyIcon.src} alt="Trophy" class="trophy-icon" />
+                    <img src={trophyIcon} alt="Trophy" class="trophy-icon" />
                     <span>€100</span>
                     <span>Amazon voucher</span>
                 </div>
@@ -175,8 +178,13 @@ import { Image } from 'astro:assets';
         text-align: center;
     }
 
+    .partner-section p {
+        font-size: 0.9rem;
+        color: #666;
+    }
+
     .partner-logo {
-        max-width: 120px;
+        max-width: 220px;
         height: auto;
         display: block;
         margin: 0 auto;

@@ -64,4 +64,15 @@ h4 {
   text-align: center;
 }
 
+h5 {
+  font-family: Doto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #666;
+}
+
 /* Other global styles */
