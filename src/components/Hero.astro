@@ -15,10 +15,10 @@ import cloudflareLogo from '../assets/cloudflare-logo.svg';
         <h2>Four weeks of vibe coding challenges</h2>
         <p class="by-text">by</p>
         <div class="sponsor-logos">
-            <a href="https://fiberplane.com" target="_blank" rel="noopener noreferrer" class="sponsor-link">
+            <a href="https://fiberplane.com" target="_blank" rel="noopener noreferrer" class="company-link">
                 <img src={fiberplaneLogo.src} alt="Fiberplane" class="sponsor-logo" />
             </a>
-            <a href="https://cloudflare.com" target="_blank" rel="noopener noreferrer" class="sponsor-link">
+            <a href="https://cloudflare.com" target="_blank" rel="noopener noreferrer" class="company-link">
                 <img src={cloudflareLogo.src} alt="Cloudflare" class="sponsor-logo" />
             </a>
         </div>
@@ -32,7 +32,7 @@ import cloudflareLogo from '../assets/cloudflare-logo.svg';
 
 <style>
     .hero {
-        min-height: clamp(600px, 80vh, 900px);
+        min-height: clamp(400px, 60vh, 700px);
         display: flex;
         align-items: flex-start;
         justify-content: center;
@@ -51,8 +51,15 @@ import cloudflareLogo from '../assets/cloudflare-logo.svg';
     }
 
     .hero-content p:first-of-type {
-        margin-top: 4rem;
+        margin-top: 1rem;
         color: black;
+    }
+
+    @media (max-width: 768px) {
+        .hero-content p:first-of-type {
+            margin-top: 6rem;
+            color: black;
+        }
     }
 
   
@@ -66,7 +73,7 @@ import cloudflareLogo from '../assets/cloudflare-logo.svg';
 
     .by-text {
         font-size: 1.2rem;
-        margin: 0.5rem 0;
+        margin-bottom: 2rem;
     }
 
     .sponsor-logos {
@@ -76,12 +83,12 @@ import cloudflareLogo from '../assets/cloudflare-logo.svg';
         align-items: center;
     }
 
-    .sponsor-link {
+    .company-link {
         display: inline-block;
         transition: transform 0.2s ease;
     }
 
-    .sponsor-link:hover {
+    .company-link:hover {
         transform: scale(1.05);
     }
 
@@ -213,7 +220,10 @@ import cloudflareLogo from '../assets/cloudflare-logo.svg';
         .hero {
             flex-direction: column;
             text-align: center;
-            padding: 4rem 1rem;
+            padding: 7rem 1rem 4rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
         }
 
         h1 {
@@ -228,22 +238,32 @@ import cloudflareLogo from '../assets/cloudflare-logo.svg';
         }
 
         .fixed-buttons {
-            top: 1rem;
-            right: 1rem;
+            top: 5.5rem;
+            right: 50%;
+            transform: translateX(50%);
             gap: 0.5rem;
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
 
         .title-container {
             position: fixed;
             top: 1rem;
-            left: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
             z-index: 11;
         }
 
         .vibe-summer-logo {
+            height: 50px;
+        }
+
+        .primary-button, .secondary-button {
+            width: 130px;
             height: 32px;
+            font-size: 16px;
+            padding: 4px 16px;
         }
     }
 </style>

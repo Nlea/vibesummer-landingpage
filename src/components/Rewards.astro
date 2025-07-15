@@ -2,7 +2,7 @@
 ---
 <section class="rewards-section" style="position: relative; z-index: 1;">
 <h2> Rewards System</h2>
-<p> Each weekly challenge has its own prize. Still every submission counts. Every submission you make adds up. The more challenges you join, the more amazing rewards you can unlock! We will ship your swag by the end of Vibe Summer.</p>
+<p class="rewards-subtitle"> Each weekly challenge has its own prize. Still every submission counts. Every submission you make adds up. The more challenges you join, the more amazing rewards you can unlock! We will ship your swag by the end of Vibe Summer.</p>
     
     <div class="rewards-grid">
         <div class="reward-card">
@@ -61,7 +61,7 @@
     .rewards-section {
         padding: 4rem 2rem;
         background: rgba(57, 255, 20, 0.05);
-        margin-top: 2rem;
+        margin-top: 0rem;
     }
 
   
@@ -73,16 +73,24 @@
         color: rgb(120, 122, 120);
     }
 
+    .rewards-subtitle {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto 2rem auto;
+    }
+
     .rewards-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 1.5rem;
         max-width: 1200px;
         margin: 0 auto;
+        padding: 0 1rem;
     }
 
     .reward-card {
         background: rgba(255, 255, 255, 0.29);
+        backdrop-filter: blur(10px);
         padding: 2rem;
         border-radius: 15px;
         border: 2px solid #FF20F8;
@@ -128,7 +136,7 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 1.2;
-        white-space: nowrap;
+        word-wrap: break-word;
         border: 1px solid rgba(207, 246, 107, 0.3);
     }
 
@@ -143,12 +151,18 @@
         border: none;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
+        .rewards-grid {
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 800px;
+        }
+    }
+
+    @media (max-width: 640px) {
         .rewards-grid {
             grid-template-columns: 1fr;
-            gap: 1.5rem;
             max-width: 400px;
+            padding: 0 0.5rem;
         }
-
     }
 </style>
