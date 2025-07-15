@@ -1,11 +1,10 @@
 ---
-import { Image } from 'astro:assets';
-import vibeGoose from '../assets/vibeGoose.svg';
+import vibeGoose from '../assets/vibeGoose.svg?url';
 ---
 <section class="features" style="position: relative; z-index: 1;">
   <div class="feature-grid">
     <div class="feature-card" style="position: relative;">
-      <Image src={vibeGoose} alt="VibeGoose" class="vibe-goose" width={60} height={77} />
+      <img src={vibeGoose} alt="VibeGoose" class="vibe-goose" width="60" height="77" />
       <h3>4</h3>
       <p>Weeks & Challenges</p>
     </div>

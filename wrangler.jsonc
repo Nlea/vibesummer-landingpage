@@ -4,6 +4,7 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
+	"account_id": "d49b8f4bbd035f3851d1e478dbc6f1a8",
 	"name": "landing",
 	"main": "./dist/_worker.js/index.js",
 	"compatibility_date": "2025-07-02",
