@@ -5,22 +5,22 @@ import vibeGoose from '../assets/vibeGoose.svg?url';
   <div class="feature-grid">
     <div class="feature-card" style="position: relative;">
       <img src={vibeGoose} alt="VibeGoose" class="vibe-goose" width="60" height="77" />
-      <h3>4</h3>
+      <span class="feature-number">4</span>
       <p>Weeks & Challenges</p>
     </div>
     
     <div class="feature-card">
-      <h3>24/7</h3>
+      <span class="feature-number">24/7</span>
       <p>Community Support</p>
     </div>
     
     <div class="feature-card">
-      <h3>Weekly</h3>
+      <span class="feature-number">Weekly</span>
       <p>Live Streams</p>
     </div>
     
     <div class="feature-card">
-      <h3>∞</h3>
+      <span class="feature-number">∞</span>
       <p>Summer Vibes</p>
     </div>
   </div>
@@ -57,7 +57,13 @@ import vibeGoose from '../assets/vibeGoose.svg?url';
     align-items: center;
   }
 
-  .feature-card h3 {
+  .feature-number {
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 55px;
+    letter-spacing: 0;
+    text-align: center;
     margin-top: 1.5rem;
     margin-bottom: 0.15rem;
     line-height: 1;

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+
 :root {
   --font-heading: "Doto", sans-serif;
   --font-body:
@@ -45,12 +47,11 @@ h2 {
 }
 
 h3 {
-  font-family: Doto;
-  font-weight: 900;
-  font-style: Black;
+  font-family: 'Doto';
+  font-weight: 200;
   font-size: 66px;
   line-height: 55px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: center;
 }
 
@@ -73,6 +74,11 @@ h5 {
   letter-spacing: 0%;
   text-align: center;
   color: #666;
+}
+
+p {
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.5;
 }
 
 /* Other global styles */
