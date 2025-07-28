@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
 
 :root {
   --font-heading: "Doto", sans-serif;
@@ -10,7 +10,17 @@
 }
 
 body {
-  font-family: "Inter Tight", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family:
+    "Inter Tight",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 23.15px;
@@ -47,7 +57,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Doto';
+  font-family: "Doto";
   font-weight: 200;
   font-size: 66px;
   line-height: 55px;
